@@ -1,0 +1,32 @@
+<div class="audio-streaming-container" data-controller="audio-recorder">
+  <div class="header">
+    <h1>Audio Streaming to Bunny.net</h1>
+    <p>Record audio directly to Bunny.net streaming service. No local storage required.</p>
+  </div>
+
+  <div class="recording-controls">
+    <button
+      data-audio-recorder-target="button"
+      data-action="click->audio-recorder#toggleRecording"
+      class="record-button btn btn-primary"
+      type="button">
+      Start Recording
+    </button>
+  </div>
+
+  <div class="status-display">
+    <p data-audio-recorder-target="status" class="status-text">
+      Ready to record
+    </p>
+  </div>
+
+  <div class="info">
+    <h3>Configuration</h3>
+    <p>Make sure to set your Bunny.net credentials in environment variables:</p>
+    <ul>
+      <li><code>BUNNY_STREAM_LIBRARY_ID</code> - Your stream library ID</li>
+      <li><code>BUNNY_STREAM_KEY</code> - Your stream access key</li>
+    </ul>
+    <p>Or pass them as parameters: <code>?stream_library_id=XXX&stream_key=YYY</code></p>
+  </div>
+</div>

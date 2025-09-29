@@ -1,24 +1,19 @@
 # README
+Attempting to stream audio with Bunny.net Stream API.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+## Installation
+```
+gem install bundler
+bundler install
+cp .env.example .env
+```
 
-* Ruby version
+Modify .env file with your Bunny.net Stream API credentials
 
-* System dependencies
+## Usage
+```
+bundle exec rails server
+```
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Go to http://localhost:3000 to see the application in action.
